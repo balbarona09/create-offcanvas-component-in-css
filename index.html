@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>offcanvas component in CSS</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<!-- Start of the left offcanvas -->
+		<div class="offcanvas" id="example-offcanvas-1" data-offcanvas>
+			<div class="offcanvas-content offcanvas-left width-animate" data-content="offcanvas">
+				<div class="offcanvas-header">
+					<h2>Offcanvas Title</h2>
+					<button class="offcanvas-close" data-dismiss="offcanvas" data-target="example-offcanvas-1">&times;</button>
+				</div>
+				<div class="offcanvas-body">
+					<p>Text in the offcanvas</p>
+				</div>
+			</div>
+		</div>
+		<!-- End of the left offcanvas -->
+		
+		<!-- Start of the right offcanvas -->
+		<div class="offcanvas" id="example-offcanvas-2" data-offcanvas>
+			<div class="offcanvas-content offcanvas-right width-animate" data-content="offcanvas">
+				<div class="offcanvas-header">
+					<h2>Offcanvas Title</h2>
+					<button class="offcanvas-close" data-dismiss="offcanvas" data-target="example-offcanvas-2">&times;</button>
+				</div>
+				<div class="offcanvas-body">
+					<p>Text in the offcanvas</p>
+				</div>
+			</div>
+		</div>
+		<!-- End of the right offcanvas -->
+		
+		<!-- Start of the top offcanvas -->
+		<div class="offcanvas" id="example-offcanvas-3" data-offcanvas>
+			<div class="offcanvas-content offcanvas-top height-animate" data-content="offcanvas">
+				<div class="offcanvas-header">
+					<h2>Offcanvas Title</h2>
+					<button class="offcanvas-close" data-dismiss="offcanvas" data-target="example-offcanvas-3">&times;</button>
+				</div>
+				<div class="offcanvas-body">
+					<p>Text in the offcanvas</p>
+				</div>
+			</div>
+		</div>
+		<!-- End of the top offcanvas -->
+		
+		<!-- Start of the bottom offcanvas -->
+		<div class="offcanvas" id="example-offcanvas-4" data-offcanvas>
+			<div class="offcanvas-content offcanvas-bottom height-animate" data-content="offcanvas">
+				<div class="offcanvas-header">
+					<h2>Offcanvas Title</h2>
+					<button class="offcanvas-close" data-dismiss="offcanvas" data-target="example-offcanvas-4">&times;</button>
+				</div>
+				<div class="offcanvas-body">
+					<p>Text in the offcanvas</p>
+				</div>
+			</div>
+		</div>
+		<!-- End of the bottom offcanvas -->
+		
+		<!-- Button that will trigger the offcanvas -->
+		<button class="btn btn-primary" data-toggle="offcanvas" data-target="example-offcanvas-1">Left offcanvas</button>
+		
+		<!-- Anchor that can also trigger the offcanvas -->
+		<a href="javascript:void(0);" class="btn btn-primary" data-toggle="offcanvas" data-target="example-offcanvas-2">Right offcanvas</a>
+		
+		<!-- Button that will trigger the offcanvas -->
+		<button class="btn btn-primary" data-toggle="offcanvas" data-target="example-offcanvas-3">Top offcanvas</button>
+		
+		<!-- Anchor that can also trigger the offcanvas -->
+		<a href="javascript:void(0);" class="btn btn-primary" data-toggle="offcanvas" data-target="example-offcanvas-4">Bottom offcanvas</a>
+		
+		<script src="script.js"></script>
+	</body>
+</html>

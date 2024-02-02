@@ -1,0 +1,341 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.offcanvas {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: hsla(0, 0%, 20%, .5);
+	z-index: 1;
+}
+.offcanvas .offcanvas-content {
+	position: absolute;
+	background-color: white;
+	overflow: auto;
+}
+.offcanvas .offcanvas-right, .offcanvas .offcanvas-left {
+	height: 100vh;
+	width: 400px;
+	top: 0;
+}
+.offcanvas .offcanvas-left {
+	left: 0;
+}
+.offcanvas .offcanvas-right {
+	right: 0;
+}
+.offcanvas .offcanvas-top, .offcanvas .offcanvas-bottom {
+	width: 100vw;
+	height: 200px;
+	left: 0;
+}
+.offcanvas .offcanvas-top {
+	top: 0;
+}
+.offcanvas .offcanvas-bottom {
+	bottom: 0;
+}
+.offcanvas .offcanvas-header, .offcanvas .offcanvas-body {
+	padding: 16px;
+}
+.offcanvas .offcanvas-header {
+	position: relative;
+}
+.offcanvas .offcanvas-close {
+	color: hsl(0, 0%, 50%);
+	border: none;
+	background-color: white;
+	font-size: 40px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+.offcanvas.offcanvas-show {
+	display: block;
+}
+.offcanvas-lg .offcanvas-close,
+.offcanvas-md .offcanvas-close,
+.offcanvas-sm .offcanvas-close,
+.offcanvas-xs .offcanvas-close {
+	display: none;
+}
+@media screen and (max-width: 1200px) {
+	.offcanvas-lg {
+		display: none;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: hsla(0, 0%, 20%, .5);
+		z-index: 1;
+	}
+	.offcanvas-lg .offcanvas-content {
+		position: absolute;
+		background-color: white;
+		overflow: auto;
+	}
+	.offcanvas-lg .offcanvas-right, .offcanvas-lg .offcanvas-left {
+		height: 100vh;
+		width: 400px;
+		top: 0;
+	}
+	.offcanvas-lg .offcanvas-left {
+		left: 0;
+	}
+	.offcanvas-lg .offcanvas-right {
+		right: 0;
+	}
+	.offcanvas-lg .offcanvas-top, .offcanvas-lg .offcanvas-bottom {
+		width: 100vw;
+		height: 200px;
+		left: 0;
+	}
+	.offcanvas-lg .offcanvas-top {
+		top: 0;
+	}
+	.offcanvas-lg .offcanvas-bottom {
+		bottom: 0;
+	}
+	.offcanvas-lg .offcanvas-header, .offcanvas-lg .offcanvas-body {
+		padding: 16px;
+	}
+	.offcanvas-lg .offcanvas-header {
+		position: relative;
+	}
+	.offcanvas-lg .offcanvas-close {
+		color: hsl(0, 0%, 50%);
+		border: none;
+		background-color: white;
+		font-size: 40px;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		cursor: pointer;
+		display: block;
+	}
+	.offcanvas-lg.offcanvas-show {
+		display: block;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.offcanvas-md {
+		display: none;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: hsla(0, 0%, 20%, .5);
+		z-index: 1;
+	}
+	.offcanvas-md .offcanvas-content {
+		position: absolute;
+		background-color: white;
+		overflow: auto;
+	}
+	.offcanvas-md .offcanvas-right, .offcanvas-md .offcanvas-left {
+		height: 100vh;
+		width: 400px;
+		top: 0;
+	}
+	.offcanvas-md .offcanvas-left {
+		left: 0;
+	}
+	.offcanvas-md .offcanvas-right {
+		right: 0;
+	}
+	.offcanvas-md .offcanvas-top, .offcanvas-md .offcanvas-bottom {
+		width: 100vw;
+		height: 200px;
+		left: 0;
+	}
+	.offcanvas-md .offcanvas-top {
+		top: 0;
+	}
+	.offcanvas-md .offcanvas-bottom {
+		bottom: 0;
+	}
+	.offcanvas-md .offcanvas-header, .offcanvas-md .offcanvas-body {
+		padding: 16px;
+	}
+	.offcanvas-md .offcanvas-header {
+		position: relative;
+	}
+	.offcanvas-md .offcanvas-close {
+		color: hsl(0, 0%, 50%);
+		border: none;
+		background-color: white;
+		font-size: 40px;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		cursor: pointer;
+		display: block;
+	}
+	.offcanvas-md.offcanvas-show {
+		display: block;
+	}
+}
+@media screen and (max-width: 768px) {
+	.offcanvas-sm {
+		display: none;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: hsla(0, 0%, 20%, .5);
+		z-index: 1;
+	}
+	.offcanvas-sm .offcanvas-content {
+		position: absolute;
+		background-color: white;
+		overflow: auto;
+	}
+	.offcanvas-sm .offcanvas-right, .offcanvas-sm .offcanvas-left {
+		height: 100vh;
+		width: 400px;
+		top: 0;
+	}
+	.offcanvas-sm .offcanvas-left {
+		left: 0;
+	}
+	.offcanvas-sm .offcanvas-right {
+		right: 0;
+	}
+	.offcanvas-sm .offcanvas-top, .offcanvas-sm .offcanvas-bottom {
+		width: 100vw;
+		height: 200px;
+		left: 0;
+	}
+	.offcanvas-sm .offcanvas-top {
+		top: 0;
+	}
+	.offcanvas-sm .offcanvas-bottom {
+		bottom: 0;
+	}
+	.offcanvas-sm .offcanvas-header, .offcanvas-sm .offcanvas-body {
+		padding: 16px;
+	}
+	.offcanvas-sm .offcanvas-header {
+		position: relative;
+	}
+	.offcanvas-sm .offcanvas-close {
+		color: hsl(0, 0%, 50%);
+		border: none;
+		background-color: white;
+		font-size: 40px;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		cursor: pointer;
+		display: block;
+	}
+	.offcanvas-sm.offcanvas-show {
+		display: block;
+	}
+}
+@media screen and (max-width: 480px) {
+	.offcanvas-xs {
+		display: none;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: hsla(0, 0%, 20%, .5);
+		z-index: 1;
+	}
+	.offcanvas-xs .offcanvas-content {
+		position: absolute;
+		background-color: white;
+		overflow: auto;
+	}
+	.offcanvas-xs .offcanvas-right, .offcanvas-xs .offcanvas-left {
+		height: 100vh;
+		width: 400px;
+		top: 0;
+	}
+	.offcanvas-xs .offcanvas-left {
+		left: 0;
+	}
+	.offcanvas-xs .offcanvas-right {
+		right: 0;
+	}
+	.offcanvas-xs .offcanvas-top, .offcanvas-xs .offcanvas-bottom {
+		width: 100vw;
+		height: 200px;
+		left: 0;
+	}
+	.offcanvas-xs .offcanvas-top {
+		top: 0;
+	}
+	.offcanvas-xs .offcanvas-bottom {
+		bottom: 0;
+	}
+	.offcanvas-xs .offcanvas-header, .offcanvas-xs .offcanvas-body {
+		padding: 16px;
+	}
+	.offcanvas-xs .offcanvas-header {
+		position: relative;
+	}
+	.offcanvas-xs .offcanvas-close {
+		color: hsl(0, 0%, 50%);
+		border: none;
+		background-color: white;
+		font-size: 40px;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		cursor: pointer;
+		display: block;
+	}
+	.offcanvas-xs.offcanvas-show {
+		display: block;
+	}
+}
+@media screen and (max-width: 400px) {
+	.offcanvas .offcanvas-left, .offcanvas .offcanvas-right,
+	.offcanvas-lg .offcanvas-left, .offcanvas-lg .offcanvas-right,
+	.offcanvas-md .offcanvas-left, .offcanvas-md .offcanvas-right,
+	.offcanvas-sm .offcanvas-left, .offcanvas-sm .offcanvas-right,
+	.offcanvas-xs .offcanvas-left, .offcanvas-xs .offcanvas-right{
+		width: 100vw;
+	}
+}
+.btn {
+  display: inline-block;
+  font-size: 16px;
+  padding: 12px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-primary {
+  background-color: hsl(210, 100%, 50%);
+  border: 1px solid hsl(210, 100%, 50%);
+  color: white;
+}
+.btn-primary:hover {
+  background-color: hsl(210, 100%, 40%);
+}
+.width-animate {
+  animation: width-animate .4s;
+}
+.height-animate {
+  animation: height-animate .4s;
+}
+@keyframes width-animate {
+  from { width: 0; }
+}
+@keyframes height-animate {
+  from { height: 0; }
+}
